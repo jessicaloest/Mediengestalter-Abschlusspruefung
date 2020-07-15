@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/*Hintergrundfarben für Boxen*/
+.periwinkle{
+  background-color: #A1B2DD;
+}
+.grau{
+  background-color: #272C33;
+}
+/*Typische Einstellungen*/
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+body{
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  color: #2A2A2A;
+}
+p{
+  font-size: 1.125rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #2A2A2A;
+  margin: 0;
+}
+h1{
+  font-size: 2.8125rem;
+  line-height: 55px;
+  font-weight: 700;
+  padding: 45px 0 20px 0;
+  margin: 0;
+}
+h2{
+  font-size: 2rem;
+  line-height: 40px;
+  margin: 0;
+  font-weight: 700;
+  padding: 0 0 20px 0;
+}
+li {
+  list-style: none;
+  font-weight: 700;
+}
+header {
+  width: 100%;
+  max-width: 1280px;
+  height: 120px;
+  line-height: 50px;
+  background-color: #fff;
+  position: fixed;
+  clear: both;
+  z-index: 1;
+}
+main{
+  padding-top: 40px;
+}
+video{
+  width: 100%;
+}
+section{
+  margin: 80px 0;
+  line-height: 50px;
+  background-color: #fff;
+}
+footer{
+  color: #fff;
+  height: 400px;
+  width: 100%;
+  max-width: 940px;
+  padding: 40px 13.2% 0 13.2%;
+}
+span {
+font-weight: 700;
+}
+.logo {
+  width: auto;
+  float: left;
+  padding: 20px 0 0 100px;
+}
+.logoImg{
+  width: 100px;
+  height: auto;
+}
+
+/*navigation*/ 
+.nav {
+  width: 65%;
+  height: 75px;
+  margin: 30px 7.8% 0 0;
+  float: right;
+  text-align: right;
+  font-weight: 700;
+}
+.nav ul {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+}
+.nav ul li {
+  width: auto;
+  color: #2a2a2a;
+  padding: 0 2%;
+  display: inline-block;
+}
+.nav li a {
+  font-weight: bold;
+}
+.nav ul li:hover {
+  color: #A1B2DD;
+}
+#navToggle {
+  display: none;
+}
+.nav-icon {
+  display: none;
+}
+
+/*CSS-Grid*/
+.containerAbout{
+  width: 100%;
+  display: grid;
+  grid-template-columns: [col1-start] 60%  [col2-start] 40% ;
+  grid-template-rows: [row1-start] 20% [row2-start] auto [row2-end];
+  height: 584px;
+}
+.containerAktion{
+  width: 100%;
+  display: grid;
+  grid-template-columns: [col1-start] 36.3% [col2-start]42.5% ;
+  grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+  height: auto;
+  padding: 0 0 0 13.3%;
+}
+.containerAktionImg{
+  width: 100%;
+  display: grid;
+  grid-template-columns: [col1-start] 28%  [col2-start] 28% [col3-start] 28% ;
+  grid-template-rows: [row1-start] auto [row2-start] auto ;
+  text-align: left;
+  height: 220px;
+  padding: 0 8% 0 8%;
+}
+.containerAktionenMehr{
+  width: 100%;
+  display: grid;
+  grid-template-columns: [col1-start]42% [col2-start]58% ;
+  grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+  margin-top: 40px;
+  height: 610px;
+}
+
+.containerInfo{
+  width: 100%;
+  display: grid;
+  grid-template-columns: [col1-start]16% [col2-start]57% ;
+  grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+  padding: 0 0 0 170px;
+}
+.container5-5{
+  width: 100%;
+  display: grid;
+  grid-template-columns: [col1-start]50% [col2-start]50% ;
+  grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+}
+.containerFooter{
+  width: 100%;
+  display: grid;
+  grid-template-columns: [col1-start]50% [col2-start]50% ;
+  grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+}
+.item1{
+  grid-column: col1-start;
+  grid-row: row1-start  / row2-end;
+  height: auto;
+}
+.item2 {
+  grid-column: col2-start ;
+  grid-row: row1-start / row2-end; 
+  height: auto;
+}
+.item3 {
+  grid-column: col3-start ;
+  grid-row: row1-start / row2-end;
+  height: auto;
+}
+.item4 {
+  grid-column: col1-start / col2-end;
+  grid-row: row2-start;
+  height: auto;
+}
+
+/*_____*/
+
+.about > img{
+  width: 100%;
+  max-width: 650px;
+}
+.about > h1{
+  margin: 0 0 20px 22%;
+  color: #fff;
+}
+.aboutText > h2,
+.aboutText > p{
+  margin: 0 15% 20px 13.5%;
+  padding: 0;
+}
+.aboutText > h2{
+  padding-top: 45px ;
+}
+.aktionenText{
+  padding: 45px 0 0 0 ;
+}
+.aktionenText > h2{
+  padding-bottom: 2px;
+} 
+/* Bilder als Hintergründe damit der Text über die Bilder stehen kann*/
+.aktionenImg1 {
+  background-image: url("bilder/bild_2.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 338px;
+}
+.aktionenImg2 {
+  background-image: url("bilder/bild_3.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 360px;
+}
+.aktionenImg3 {
+  background-image: url("bilder/bild_4.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 360px;
+}
+.aktionenImg4 {
+  background-image: url("bilder/bild_5.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 360px;
+}
+.verschenkenImg img{
+  width: 80%;
+  max-width: 364px;
+}
+.verschenkenImg {
+  padding: 18.6% 0 0 23%;
+  margin: 0 16% 0 0;
+  text-align:right;
+}
+.aktionenSubheadline, .aktionenSubheadlineRabatte{
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+  width: 60%;
+  max-width: 340px;
+}
+.aktionenSubheadline {
+  margin-top: 150px;
+  padding: 0 0 5% 5%;
+}
+.aktionenSubheadlineRabatte{
+  margin-top: 250px;
+  padding: 0 0 5% 8%;
+}
+.dreilines{
+  margin-top:130px;
+}
+.verschenkenHeadline{
+  padding: 45px 80px 20px 170px;
+}
+.beratenHeadline{
+  padding: 45px 23% 20px 40%;
+  text-align: right;
+  color: #fff;
+}
+.termin{
+  padding: 0 0 0 13.2%;
+  height: 420px;
+}
+.termin > h1,
+.termin > h2,
+.termin > p{
+  color:#fff;
+}
+.whiteTextForm{
+  margin:0 42px 0 168px;
+}
+.pb20{
+  padding-bottom: 20px;
+}
+.info p{
+  padding: 0;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+  margin: 20px 20px 0 0;
+}
+.maps{
+  margin-right: 69px;
+  padding-left: 69px;
+}
+.impressum{
+  width: 40%;
+  padding: 0 69px 0 0 ;
+}
+.impressumRight{
+  width: 40%;
+  padding: 120px 0 0 69px ;
+  margin-left:auto;
+}
+
+
+/*form*/
+#contact input,
+#contact textarea {
+  font-size:0.75rem;
+  color: #2a2a2a;
+}
+#contact button[type="submit"]{
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #272C33;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  width: 160px;
+  padding: 10px;
+}
+#contact button[type="submit"]:hover {
+  background: #fff;
+  color: #2a2a2a;
+}
+#contact {
+  margin: 45px 0 0 0;
+  padding: 0 172px 0 125px;
+  width: 343px;
+  height: 320px;
+}
+#contact input,
+#contact textarea {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 323px;
+  border: none;
+  background: #FFF;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+#contact textarea {
+  height: 70px;
+  width: 100%;
+  max-width: 323px;
+  resize: none;
+  margin: 0;
+}
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #2a2a2a;
+}
+.infoText{
+  padding: 45px 150px 0 170px;
+}
+
+/*breakpoints*/
+
+/*Breakpoint Tablett, fängt bei 920px an damit die Navigation nicht umbricht*/
+@media screen and (max-width: 920px) {
+  .logo{
+    padding-left: 40px;
+  }
+  .nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    }
+    
+  .nav ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.3s;
+    -moz-transition: max-height 0.3s;
+    -ms-transition: max-height 0.3s;
+    -o-transition: max-height 0.3s;
+    transition: max-height 0.3s;
+    /*kleine animation beim ausklappen der navi*/
+  }
+  .nav ul a {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    background-color: #272C33;
+    padding: 10px 0px 10px 6%;
+  }
+  .nav a {
+    font-weight: bold;
+  }
+  .nav-icon {
+    width: 100px;
+    height: inherit;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px 3.6% 0 0 ;
+    line-height: 60px;
+  }
+  #navToggle:checked ~ ul {
+    max-height: 350px;
+  }
+  .nav-icon i {
+    font-size: 1.7rem;
+  }
+  .nav ul a li:hover {
+    color: #A1B2DD;
+  }
+  .fa-bars{
+    color: #2a2a2a;
+  }
+  li {
+    color: #FFF;
+  }
+  section{
+    margin: 0 0 50px 0;
+    height: auto;
+  }
+  main{
+    margin: 0 0 90px 0;
+    padding-top: 120px;
+  }
+  h1{
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    padding-top: 0;
+  }
+  h2{
+    font-size: 2rem;
+    line-height: 2.25rem;
+    padding-bottom: 20px;
+  }
+  p{
+    font-size:1rem;
+  }
+  /* css grid*/
+  .item1{
+    grid-column: col1-start  ;
+    grid-row: 1;
+  }
+  .item2{
+    grid-column: col1-start ;
+    grid-row: 2;
+  }
+  .item3{
+    grid-column: col1-start ;
+    grid-row: 3;
+  }
+  .item4{
+    grid-column: col1-start ;
+    grid-row: 4;
+  }
+  .containerMobile{
+    width: 100%;
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: [col1-start] 100%;
+    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] auto;
+    text-align: left;
+    height: auto;
+    padding: 0;
+  }
+  .containerAktion{
+    grid-template-rows: [row1-start] 170px [row2-start] 350px;
+  }
+  .containerFooter{
+    padding-left: 8%;
+    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] auto ;
+    height: auto;
+  }
+  .containerAktionImg{
+    height: 1050px;
+    width: 100%;
+    padding: 0;
+    max-width: 920px;
+    grid-template-columns: [col1-start] 100%;
+    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto;
+  }
+  /*Abstände verkleinern / ändern*/
+  .about > h1 {
+    margin: 0;
+    padding: 40px 0 40px 8%;
+  }
+  .aboutText{
+    margin: 40px 0 0 8%;
+  }
+  .aboutText > p,
+  .aboutText > h2{
+    margin: 0 8% 0 0;
+    padding: 0 0 20px 0;
+  }
+  .aktionenText{
+    padding: 0 0 0 8%;
+    height: 75px;
+  }
+  .aktionenText > h1{
+    padding: 0 0 10px 0;
+  }
+  .verschenkenImg{
+    padding: 0 10% 20px 8%;
+    text-align: none;
+  }
+  .aktionenSubheadline-large{
+    margin: 250px 8% 0 0;
+  }
+  .aktionenSubheadline{
+    margin: 270px 8% 0 0;
+  }
+  .beratenHeadline{
+    padding: 40px 8% 40px 8%;
+    text-align: left;
+  }
+  .verschenkenHeadline{
+    padding: 0 8% 40px 8%;
+    text-align: left;
+  }
+  .aktionenSubheadline, .aktionenSubheadlineRabatte{
+    width: 90%;
+    max-width: 920px;
+    margin-right: 8%;
+  }
+  
+  /*breitere Bilder für die mobile sicht, da die bilder auf dem Desktop anders geschnitten sind*/
+  .aktionenImg1Mobile {
+    background-image: url("bilder/bild_2_mobile.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 920px;
+    height: auto;
+  }
+  .aktionenImg2Mobile {
+    background-image: url("bilder/bild_3_mobile.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 920px;
+    height: auto;
+  }
+  .aktionenImg3Mobile {
+    background-image: url("bilder/bild_4_mobile.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 920px;
+    height: auto;
+  }
+  .aktionenImg4Mobile {
+    background-image: url("bilder/bild_5_mobile.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 920px;
+    height: auto;
+  }
+  .beratenImg{
+    width: 100%;
+    max-width: 653px;
+    padding-bottom: 20px;
+  }
+  .termin{
+    padding-left: 0;
+    margin: 0 30% 0 0 ;
+    height: 300px;
+  }
+  #termin{
+    padding: 40px 0 0 8%;
+  }
+  .container5-5{
+    padding: 0;
+  }
+  .containerAktionImg > .item1,
+  .containerAktionImg > .item2,
+  .containerAktionImg > .item3,
+  .containerAktionImg > .item4{
+    height: 350px;
+  }
+  #contact{
+    padding: 0 0 40px 0;
+    height: 100%;
+    margin-top: 0;
+  }
+  .info{
+    max-width: 880px;
+    margin: 0 0 0 8%;
+  }
+  .maps{
+    padding: 0;
+    margin-right: 8%;
+    width: 80%;
+  }
+  .impressumRight{
+    margin: 0;
+    padding: 10px 0 0 0;
+    width: 60%;
+  }
+  .impressum{
+    width: 70%;
+  }
+  footer{
+    padding-left: 8%;
+  }
+}
+
+/*Breakpoint Smartphone*/
+  @media screen and (max-width: 479px) {
+    /*kleine schriftart fürs Smartphone*/
+    h1{
+      font-size: 2rem;
+      line-height:2.25rem ;
+    }
+    h2{
+      font-size: 1.5rem;
+      line-height: 1.625rem;
+    }
+    .about > h1{
+      padding: 20px 0;
+      margin:  0 12%;
+    }
+  }
+
+

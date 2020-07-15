@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Anton Tack</title>
+  </head>
+  <header> <!-- sticky header mit navigation startet hier -->
+    <div class="logo">
+      <img class="logoImg" src="bilder/logo.svg" alt="logo"><a href="#home"></a>
+    </div>
+    <nav class="nav"> 
+      <input type="checkbox" id="navToggle">
+      <label for="navToggle" class="nav-icon"><i class="fa fa-bars"></i></label>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#ueberuns">Wir über uns</a></li>
+        <li><a href="#aktionen">Aktionen</a></li>
+        <li><a href="#termin">Terminvereinbarung</a></li>
+        <li><a href="#info">Info</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main> <!-- main content startet hier -->
+    <section id="home" class="home"> <!-- animation als video eingebunden -->
+        <video width="1280" height="39%" controls autoplay>
+          <source src="animation.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id ="ueberuns" class="containerAbout containerMobile">
+      <div class="about item1 periwinkle"> 
+        <h1>Wir Über Uns</h1>
+        <img src="bilder/bild_1.jpg" alt="about image" />
+      </div>
+      <div class="item2 aboutText">
+          <h2>Damit Ihre Optik stimmt - Optik Tack</h2>
+          <p>
+            Bei Optik Tack in Aalen erwartet Sie exzellente Beratung in angenehmer Atmosphäre. 
+            Wir setzen all unsere handwerklich-technischen Fertigkeiten für Ihre Augen, fürs bessere Sehen ein.
+          </p>
+          <p>
+            Und jenen Kundinnen und Kunden, die sich nur schlecht damit abfinden können, 
+            ab jetzt ständig eine Brille tragen zu müssen, sagen wir: Tragen Sie’s mit (modischer) Fassung! 
+          </p>
+      </div>
+    </section>
+    <section id="aktionen">
+      <div class="containerAktion containerMobile">
+        <div class="aktionenText item1">
+          <h1>Aktionen</h1>
+          <h2>Sommeraktion</h2>
+          <p>vom Montag, 6.Juni bis 
+            <br>
+            Samstag, 25.Juni 2020
+          </p>
+        </div>
+        <div class="item2 aktionenImg1 aktionenImg1Mobile">
+          <h2 class="aktionenSubheadlineRabatte">Rabatte <br/> auf Sonnenbrillen für Groß und Klein</h2>
+        </div>
+      </div>
+      <div class="containerAktionImg">
+        <div class="item1 aktionenImg2 aktionenImg2Mobile">
+          <h2 class="aktionenSubheadline dreilines">Sommerrätsel<br/> für Kinder und Erwachsene</h2>
+        </div>
+        <div class="item2 aktionenImg3 aktionenImg3Mobile">
+          <h2 class="aktionenSubheadline">Schnelle<br/> Brillenreparatur</h2>
+        </div>
+        <div class="item3 aktionenImg4 aktionenImg4Mobile">
+          <h2 class="aktionenSubheadline">Gutscheine<br/> zu gewinnen</h2>
+        </div>
+      </div>
+      <div class="containerAktionenMehr aktionenMehr containerMobile">
+        <div class="item1">
+          <h2 class="verschenkenHeadline">Verschenken Sie gute Sicht!</h2>
+          <img class="verschenkenImg" src="bilder/bild_6.jpg" alt="" width="364px" height="auto" />
+        </div>
+        <div class="item2 grau">
+          <h2 class="beratenHeadline">Lassen Sie sich beraten</h2>
+        <img class="beratenImg" src="bilder/bild_7.jpg" alt="" width="653px" height="auto" />
+        </div>
+      </div>
+    </section>
+    <section id ="termin" class="container5-5 periwinkle containerMobile">
+      <div class="termin item1 "> 
+        <h1>Terminverein-<br>barung</h1>
+        <h2>Vereinbaren Sie einen Termin mit uns!</h2>
+        <p>Wir melden uns umgehend mit einem Terminvorschlag.</p>
+      </div>
+      <div class="periwinkle item2">
+        <form id="contact" action="" method="post">
+          <input placeholder="Name, Vorname" type="text" tabindex="1" required autofocus>
+          <input placeholder="E-Mail" type="email" tabindex="2" required>
+          <input placeholder="Telefon" type="tel" tabindex="3" required>   
+          <textarea placeholder="Ihr Anliegen in Kürze (Brille, Kontaktlinsen, optometrische Messung, usw.)" tabindex="5" required></textarea>
+          <button name="submit" type="submit">Abschicken</button>
+        </form>
+      </div>
+    </section>
+    <section id ="info" class="info containerInfo containerMobile">
+      <div class="item1"> 
+        <h1>Info</h1>
+        <div class="pb20">
+          <p><span>Öffnungszeiten:</span></p>
+          <p>Mo–Fr 9 Uhr bis 18 Uhr
+            <br>
+            Sa 9 Uhr bis 13.30 Uhr
+          </p>
+        </div>
+        <div class="pb20">
+          <p><span>Hier finden Sie uns:</span></p>
+          <p>
+            <br>Mozartstraße 37, 73430 Aalen</p>
+        </div>
+        <!-- social media icons -->
+        <p><span>Und auf:</span></p>
+        <a href="https://www.pinterest.com"><img src="bilder/pinterest.png" alt="pinterest-icon" class="icon" /></a>
+        <a href="https://www.instagram.com"><img src="bilder/instagram.png" alt="instagram-icon" class="icon" /></a>
+        <a href="https://www.facebook.com"><img src="bilder/facebook.png" alt="facebook-icon" class="icon" /></a>
+      </div>
+      <!-- map kann nicht offline angezeigt werden, keine zeit mehr ein Bild dafür einzufügen -->
+      <div class="item2">
+        <iframe class ="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.1486656260167!2d10.069609115905427!3d48.836302910215466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47991b7b2bb80fff%3A0x4aaa10e84e32e0ec!2sMozartstra%C3%9Fe%2037%2C%2073430%20Aalen!5e0!3m2!1sen!2sde!4v1590692378984!5m2!1sen!2sde" width="734" height="394" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="containerFooter grau">
+    <div class="item1 impressum"> 
+      <h1>Impressum</h1>
+      <p>Optik Tack GmbH 
+        Mozartstraße 37 <br>
+        73430 Aalen<br>
+        Tel.: 07361/123451
+        info@optik-tack.de
+        www.optik-tack.de
+        </p>
+    </div>
+    <div class="item2 impressumRight"> 
+      <p>
+        Geschäftsführer: Anton Tack
+        Amtsgericht Aalen
+        Handelsregister Nr. XXX000XXX, 
+        Finanzamt Aalen
+        USt.IdNr.: DE10111011
+        </p>
+    </div>
+    <!-- item4 damit es unter in der row daunter ist -->
+    <div class="item4"> 
+      <p>
+        <span>Datenschutz</span><br>
+        Datenschutzhinweise gemäß EU-Datenschutz-Grundverordnung (DSGVO)
+        </p>
+    </div>
+  </footer> 
+  </body>
+</html>
